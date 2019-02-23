@@ -1,0 +1,40 @@
+{
+  "name": "nuxt2-pwa-gae",
+  "version": "1.0.0",
+  "description": "My phenomenal Nuxt.js project",
+  "author": "zpzyyzp",
+  "private": true,
+  "browserslist": [
+    "last 2 version",
+    "IE 11"
+  ],
+  "engines": {
+    "node": ">9.0.0",
+    "npm": ">6.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-beta.8",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.4.3",
+    "vuetify": "^1.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
